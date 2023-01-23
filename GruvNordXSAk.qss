@@ -1,0 +1,100 @@
+/*
+ * author: Akos Keresztes <https://github.com/xsak/GruvBox-Albert-themes>
+ * based on: Manuel Schneider <https://github.com/ManuelSchneid3r>
+ *
+ * Check http://doc.qt.io/qt-5/stylesheet-syntax.html especially the subtopics:
+ * The Style Sheet Syntax (http://doc.qt.io/qt-5/stylesheet-syntax.html)
+ * Qt Style Sheets Reference (http://doc.qt.io/qt-5/stylesheet-reference.html)
+ */
+
+* {
+    color: #BDAE93;
+    background-color: #32302F;
+}
+
+QToolTip {
+
+}
+
+#frame {
+    background-color: none;
+    border: none;
+    max-width:640px;
+    min-width:640px;
+    padding: 24px; /* to have a drag handle */
+}
+
+#inputLine {
+    border-radius: 8px;
+    border: 1px solid #1D2021;
+    color: #BDAE93;
+    font-size: 26px;
+    padding: 12px;
+    selection-background-color: #3C3836;
+    selection-color: #BDAE93;
+}
+
+#settingsButton {
+    background-color: transparent;
+    color: #1D2021;
+    max-height:13px;
+    max-width:13px;
+    min-height:13px;
+    min-width:13px;
+    padding: 16px;
+}
+
+/********** ListViews ************/
+
+QListView {
+    margin-top: 10px;
+    border: 1px solid #1D2021;
+    border-radius: 8px;
+    padding: 6px;
+    color: #7C6F64;
+    selection-color: #BDAE93;
+    selection-background-color: #3C3836;
+}
+
+
+QListView::item {
+    padding: 4px;
+    border-radius: 6px;
+}
+
+QListView::item:selected {
+    background-color: #3C3836;
+}
+
+QListView QScrollBar:vertical  {
+    width: 2px;
+    background: transparent;
+}
+
+QListView QScrollBar::handle:vertical  {
+    background: #211F1D;
+    min-height: 24px;
+}
+
+QListView QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,
+QListView QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,
+QListView QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    border: 0px;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
+
+/********** resultsList **********/
+
+QListView#resultsList {
+    icon-size: 38px;
+    font-size: 20px;
+}
+
+/********** actionList **********/
+
+QListView#actionList {
+    font-size: 16px;
+}
+
